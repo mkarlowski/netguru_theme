@@ -1,5 +1,6 @@
-require "netguru_theme/version"
+require 'netguru_theme/version'
 
 module NetguruTheme
-  # Your code goes here...
+  class Engine < ::Rails::Engine
+  end
 end
