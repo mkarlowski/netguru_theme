@@ -1,6 +1,8 @@
-# NetguruTheme
+# netguru_theme
+[![Dependency Status](https://gemnasium.com/netguru/netguru_theme.svg)](https://gemnasium.com/netguru/netguru_theme)
+[![Gem Version](https://badge.fury.io/rb/netguru_theme.svg)](http://badge.fury.io/rb/netguru_theme)
 
-TODO: Write a gem description
+Bootstrap theme used across Netguru internal apps.
 
 ## Installation
 
@@ -18,8 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Import stylesheets:
+```scss
+@import 'netguru_theme';
+```
+and import javascripts:
+```js
+//= require netguru_theme
+```
 
+netguru_theme is build on top of [Twitter Bootstrap](http://getbootstrap.com/) ([bootstrap-sass](https://github.com/twbs/bootstrap-sass) gem) and includes [Bourbon](https://github.com/thoughtbot/bourbon).
 ## Contributing
 
 1. Fork it ( https://github.com/netguru/netguru_theme/fork )
