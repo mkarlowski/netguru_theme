@@ -22,7 +22,7 @@ Or install it yourself as:
 
 Import stylesheets:
 ```scss
-@import 'netguru_theme';
+@import 'netguru-theme';
 ```
 and import javascripts:
 ```js
