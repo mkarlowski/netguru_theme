@@ -10,7 +10,7 @@
 select {
   &.form-control {
     -webkit-appearance: none;
-    background-image: url(/assets/arrows.png);
+    background-image: image-url('arrows.png');
     background-repeat: no-repeat;
     background-position: right 10px center;
   }
