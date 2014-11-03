@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency('sass', '~> 3.3')
   spec.add_dependency('bourbon', '~> 4.0')
-  spec.add_dependency('bootstrap-sass', '~> 3.2.0')
+  spec.add_dependency('bootstrap-sass', '~> 3.3.0')
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
