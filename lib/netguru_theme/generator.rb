@@ -1,7 +1,3 @@
-# require 'sass'
-# require 'bourbon'
-# require 'bootstrap-sass'
-
 module NetguruTheme
   class Generator < Thor
     option :style
