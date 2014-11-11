@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require File.dirname(__FILE__) + '/../lib/netguru_theme.rb'
+NetguruTheme::Generator.start
