@@ -2,9 +2,9 @@
 [![Dependency Status](https://gemnasium.com/netguru/netguru_theme.svg)](https://gemnasium.com/netguru/netguru_theme)
 [![Gem Version](https://badge.fury.io/rb/netguru_theme.svg)](http://badge.fury.io/rb/netguru_theme)
 
-Bootstrap theme used across Netguru internal apps.
+Bootstrap theme used across Netguru internal apps. Netguru_theme is build on top of [Twitter Bootstrap](http://getbootstrap.com/) ([bootstrap-sass](https://github.com/twbs/bootstrap-sass) gem) and includes [Bourbon](https://github.com/thoughtbot/bourbon).
 
-## Installation
+## Installation for Ruby on Rails
 
 Add this line to your application's Gemfile:
 
@@ -14,13 +14,7 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install netguru_theme
-
-## Usage
-
-Import stylesheets:
+Then import stylesheets:
 ```scss
 @import 'netguru-theme';
 ```
@@ -29,7 +23,24 @@ and import javascripts:
 //= require netguru_theme
 ```
 
-netguru_theme is build on top of [Twitter Bootstrap](http://getbootstrap.com/) ([bootstrap-sass](https://github.com/twbs/bootstrap-sass) gem) and includes [Bourbon](https://github.com/thoughtbot/bourbon).
+## Install manually
+
+Install gem:
+```
+$ gem install netguru_theme
+```
+
+Then run
+```
+netguru_theme install
+```
+
+**Tip:** you can choose output style by passing <code>--style</code> option:
+```
+netguru_theme install --style nested
+```
+Allowed values are: <code>compressed</code> (default), <code>nested</code>, <code>expanded</code> or <code>compact</code>.
+
 ## Contributing
 
 1. Fork it ( https://github.com/netguru/netguru_theme/fork )
