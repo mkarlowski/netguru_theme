@@ -10,7 +10,7 @@
 }
 
 @mixin quantity($args) {
-  @warn "Quantity mixin will be depraceted in 0.1.0";
+  @warn "Quantity mixin will be depraceted";
   @include sizing($args);
 }
 
