@@ -10,7 +10,7 @@ module NetguruTheme
     def install
       return unless valid_style?
       render = Sass::Engine.new(File.read(source_path), params).render
-      File.write('netguru-theme.min.css', render)
+      File.write('netguru-theme.css', render)
     end
 
     private
