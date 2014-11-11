@@ -9,6 +9,11 @@ module NetguruTheme
       File.write('netguru-theme.css', render)
     end
 
+    desc 'version', 'Show netguru_theme version'
+    def version
+      puts "netguru_theme v#{NetguruTheme::VERSION}"
+    end
+
     private
 
     def valid_style?
