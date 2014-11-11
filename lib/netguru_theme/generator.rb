@@ -18,7 +18,9 @@ module NetguruTheme
 
     def valid_style?
       return true if %w(compressed nested expanded compact).include? style
-      puts('Invalid --style option')
+      error_message = 'Invalid --style option. Allowed options: compressed '\
+                      '(default), nested, expanded or compact.'
+      puts error_message
     end
 
     def source_path
