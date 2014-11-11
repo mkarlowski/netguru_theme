@@ -1,4 +1,4 @@
-@mixin quantity($args) {
+@mixin sizing($args) {
   @if length($args) == 2 {
     width: nth($args, 1);
     height: nth($args, 2);
@@ -9,13 +9,18 @@
   }
 }
 
-@mixin circle($quantity) {
-  @include quantity($quantity);
+@mixin quantity($args) {
+  @warn "Quantity mixin will be depraceted in 0.1.0";
+  @include sizing($args);
+}
+
+@mixin circle($args) {
+  @include sizing($args);
   border-radius: 50%;
 }
 
 @mixin rounded-box($size, $corners) {
-  @include size($size);
+  @include sizing($size);
   @include inline-border-radius($corners);
 }
 
