@@ -16,7 +16,7 @@ module NetguruTheme
     private
 
     def valid_style?
-      return true if [:compressed, :nested, :expanded, :compact].include? style
+      return true if %w(compressed nested expanded compact).include? style
       puts('Invalid --style option')
     end
 
@@ -27,14 +27,14 @@ module NetguruTheme
     end
 
     def style
-      options[:style].nil? ? :compressed : options[:style]
+      options[:style].nil? ? 'compressed' : options[:style]
     end
 
     def params
       {
         cache: false,
         syntax: :scss,
-        style: style,
+        style: style.to_sym,
         filename: source_path
       }
     end
