@@ -43,7 +43,7 @@
   }
 }
 
-@mixin position($position, $args) {
+@mixin _position($position, $args) {
   @each $dir in top, left, bottom, right {
     $i: index($args, $dir);
     @if $i {
@@ -54,13 +54,13 @@
 }
 
 @mixin absolute($args) {
-  @include position(absolute, $args);
+  @include _position(absolute, $args);
 }
 @mixin relative($args) {
-  @include position(relative, $args);
+  @include _position(relative, $args);
 }
 @mixin fixed($args) {
-  @include position(fixed, $args);
+  @include _position(fixed, $args);
 }
 
 @mixin centered-vertically {
