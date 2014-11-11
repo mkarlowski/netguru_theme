@@ -51,7 +51,7 @@
   }
 
   .intro {
-    @include quantity($line-height-computed + 5px);
+    @include sizing($line-height-computed + 5px);
     color: $white;
     display: inline-block;
     font-size: $font-size-extra-small;
@@ -82,7 +82,7 @@
 
   &-download-link {
     @include absolute(top 0 left 0);
-    @include quantity(100%);
+    @include sizing(100%);
     z-index: 9;
     opacity: 0;
     &:hover {
