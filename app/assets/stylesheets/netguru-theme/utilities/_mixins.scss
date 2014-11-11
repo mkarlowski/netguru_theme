@@ -26,17 +26,16 @@
 
 @mixin inline-border-radius($args) {
   @if length($args) == 4 {
-    $dirs: (top-left, 1),
-           (top-right, 2),
-           (bottom-right, 3),
-           (bottom-left, 4);
-    @each $dir, $i in $dirs {
-      border-#{$dir}-radius: nth($args, $i);
-    }
+    border-top-left-radius: nth($args, 1);
+    border-top-right-radius: nth($args, 2);
+    border-bottom-right-radius: nth($args, 3);
+    border-bottom-left-radius: nth($args, 4);
   }
   @else if length($args) == 2 {
-    @include border-top-radius(nth($args, 1));
-    @include border-bottom-radius(nth($args, 2));
+    border-top-left-radius: nth($args, 1);
+    border-top-right-radius: nth($args, 1);
+    border-bottom-left-radius: nth($args, 2);
+    border-bottom-right-radius: nth($args, 2);
   }
   @else if length($args) == 1 {
     border-radius: $args;
