@@ -41,6 +41,8 @@ netguru_theme install --style nested
 ```
 Allowed values are: <code>compressed</code> (default), <code>nested</code>, <code>expanded</code> or <code>compact</code>.
 
+**Known issues:** manuall install script does not include js, fonts and images - you'll need add them manually.
+
 ## Contributing
 
 1. Fork it ( https://github.com/netguru/netguru_theme/fork )
