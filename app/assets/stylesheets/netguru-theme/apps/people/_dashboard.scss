@@ -1,0 +1,214 @@
+.editPopup {
+  display: none;
+
+  .modal-dialog {
+    position: absolute !important;
+    left: 50%;
+    margin-left: -300px;
+    z-index: 1050;
+
+    .form-group.date {
+      display: inline-block;
+      width: 45%;
+    }
+
+    .checkbox {
+      text-align: left;
+
+      label {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.selectize-input {
+  @include box-shadow(none);
+  padding: 2px 4px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  min-width: 180px;
+  min-height: 34px;
+
+  input {
+    vertical-align: sub;
+  }
+
+  > div {
+    margin: 2px 4px 2px 0;
+  }
+}
+
+.new-membership {
+  margin: 8px 0px;
+  float: left;
+  text-align: center;
+  width: 85px;
+
+  .selectize-control {
+    line-height: 13px;
+  }
+
+  .selectize-input {
+    @include box-shadow(none);
+    border: 0;
+    padding: 8px;
+    position: relative;
+    top: 2px;
+  }
+
+  .selectize-dropdown {
+    [data-selectable] {
+      padding: 5px;
+      .name { margin: 5px 0 5px 35px; }
+    }
+  }
+}
+
+.new-project {
+  display: block;
+  position: relative;
+  float: left;
+  margin-bottom: 7px;
+}
+
+.open-all-notes {
+  float: right;
+}
+
+.new-project-add,
+.show-notes,
+.open-all-notes-button {
+  padding: 12px;
+  width: 300px;
+  top: 2px;
+  cursor: pointer;
+  line-height: 16px;
+  text-align: center;
+  border: 1px solid $brand-success;
+
+  &::before {
+    float: left;
+  }
+
+  p {
+    margin: 0;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &.clicked {
+    border: 1px solid $brand-success;
+    background: white;
+    color: $brand-success;
+    &:hover { background: #EEEEEE; }
+  }
+}
+
+.show-notes {
+  display: inline-block;
+  width: 40px;
+  top: 6px;
+  float: right;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.open-all-notes-button {
+  position: relative;
+  top: 2px;
+  border-radius: 0px;
+  border: 1px solid #428BCA;
+  border-top: 0px;
+}
+
+.project-notes-wrapper {
+  min-height: 100px;
+  clear: both;
+
+  .project-note {
+    width: 50%;
+    float: left;
+    padding: 2px 30px 2px 0px;
+    position: relative;
+    color: #000;
+  }
+
+  .note-img {
+    display: inline-block;
+    float: left;
+    margin: 2px;
+  }
+
+  .note-group {
+    position: relative;
+    height: 46px;
+    width: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+  }
+
+  .note-remove, .note-close {
+    position: absolute;
+    right: 15px;
+    top: 9px;
+  }
+
+  .note-close {
+    top: 26px;
+  }
+
+  .new-project-note {
+    clear: both;
+  }
+
+  .note-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .closed-note {
+    background-color: rgba(62, 167, 53, 0.6);
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #3E7A39;
+    font-size: 24px;
+    overflow: hidden;
+  }
+
+  .hide-overflow {
+    overflow: hidden;
+  }
+
+  .scroll-overflow {
+    overflow: scroll;
+  }
+}
+
+.new-project-form {
+  padding: 7px 15px 15px 15px;
+  width: 300px;
+  left: 0;
+  top: 44px;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background: $brand-success;
+  border: 1px solid $brand-success;
+  color: white;
+
+  .new-project-submit {
+    float: right;
+  }
+
+  .new-project-close {
+    float: left;
+  }
+}
